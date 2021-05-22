@@ -21,5 +21,6 @@ try:
   import time
   import sys
   import subprocess
+  print("Everything seems to be already installed")
 except ModuleNotFoundError:
   makeInstall()
