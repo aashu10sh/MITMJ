@@ -60,4 +60,6 @@ except KeyboardInterrupt :
     print("\n[x] Detected CTRL + C, Establishig Original Connection...")
 except IndexError:
     print(" \n[x]The Device you are trying to spoof is currently offline, \n try again or ask @A5H to shorten the send time")
+    restore(target_ip,gateway_ip)
+    restore(gateway_ip,gateway_ip)
 
