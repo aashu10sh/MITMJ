@@ -36,11 +36,11 @@ def afterSniff(packet):
 interface = input("Enter your interface> ")
 try:
     sniff(interface)
+except PermissionError:
+    print("Please run this script with sudo, Permission Denied")
 except:
         print("Error Occoured, are your sure your interface was correct, use iwconfig to find out")
         exit()
-except PermissionError:
-    print("Please run this script with sudo, Permission Denied")
 
 def shred():
     print("Leave me here...")
