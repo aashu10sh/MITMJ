@@ -7,7 +7,7 @@ def makeInstall():
   else:
       print("Installing necessary modules via pip3,make sure you have pip3 installed")
       try:
-        subprocess.call(["pip3","install","scapy","scapy.layers","argparse","colorama"])
+        subprocess.call(["pip3","install","scapy","colorama","argparse"])
       except:
         print("Something went wrong, please manually install all pacakges")
 
@@ -15,8 +15,7 @@ def makeInstall():
 
 try:
   import os
-  import scapy.all
-  import scapt.layers
+  import scapy
   import argparse
   import optparse
   import time
